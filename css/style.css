@@ -1,3 +1,6 @@
 #admin {
   height: 80vh;
 }
+textarea {
+  resize: none;
+}
