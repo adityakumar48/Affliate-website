@@ -17,22 +17,34 @@
     <!--Custom CSS-->
   </head>
   <body>
-    <header id="admin">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="card py-auto px-auto">
-              <form action="process.php" method="post">
-                <tr>
-                  <td>username :</td>
-                  <td><input type="text" name="username" /></td>
-                </tr>
-              </form>
+    <section
+      id="admin"
+      class="text-center mx-auto d-flex align-items-center justify-content-center"
+    >
+      <div class="col-md-4">
+        <div class="card">
+          <h1 class="py-3">Admin Login</h1>
+          <form action="process.php" method="post">
+            <div class="username__Section py-2">
+              <tr>
+                <td>Username :</td>
+                <td><input type="text" name="username" /></td>
+              </tr>
             </div>
-          </div>
+
+            <div class="password__Section py-2">
+              <tr>
+                <td>Password :</td>
+                <td><input type="password" name="password" /></td>
+              </tr>
+            </div>
+            <div class="button pb-4 pt-3">
+              <button type="submit" class="btn btn-primary px-4">Login</button>
+            </div>
+          </form>
         </div>
       </div>
-    </header>
+    </section>
     <!-- bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
