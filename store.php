@@ -1,3 +1,6 @@
+<?php
+include('header.html')
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,10 +17,41 @@
     <!-- bootstrap -->
   </head>
   <body>
-    <a href="new-post.html">New Post</a>
-    <a href="Show-posts.php">All Posts</a>
-    <a href="Store.php">Store</a>
+    <h1 class="text-center py-4">Product Section</h1>
+    <div class="container">
+         
+        <div class="row">
+          <div class="col-md-12" >
+          <h1 class="text-center">
+           
+         
+        </div>
+        <?php 
+  
+     
 
+  $sql = "select * from post ";
+  include("dbConnect.php");
+   
+      $result= $pdo->query($sql);
+      
+    $rs =   $result->fetchAll();
+     
+    foreach($rs as $row){
+?> 
+       <!-- Card Start -->
+         <div class="col-md-3 ">
+               <div class="card" style="width: 18rem;">
+                 <img class="card-img-top" src="uploads/<?php echo $row['image'];?>" alt="shinzo" width="100%" height="300px">
+                 <div class="card-body">
+                   <h2 class="card-title"><?php echo $row['title']; ?></h2>
+                   <p class="card-text"><?php echo $row['description']; ?></p>
+                   <p class="card-text">₹ <?php echo $row['price']; ?></p>
+                   <a href=<?php echo $row['link']; ?> class="btn btn-primary mx-5">Book Now</a>
+                 </div>
+               </div>
+             </div>
+             <?php } ?>
     <!-- bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

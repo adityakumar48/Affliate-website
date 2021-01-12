@@ -23,11 +23,11 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div
               class="banner text-center align-content-center pt-5 mt-5  justify-content-center "
             >
-              <h1 class="py-3 pt-5">Affiliate Marketing Store</h1>
+              <h2 class="py-3 pt-5">Affiliate Marketing Store</h2>
               <p class="py-3">
                 Online Shopping India - Buy mobiles, laptops, cameras, books,
                 watches, apparel, shoes and e-Gift Cards. Free Shipping & Cash
@@ -63,6 +63,10 @@ From time to time, we may modify this Schedule in accordance with the Operating 
             </div>
         </div>
       </div>
+    </section>
+    <div class=" pt-5 pb-5 "></div>
+    <section class="product">
+
     </section>
     <!-- bootstrap -->
     <script

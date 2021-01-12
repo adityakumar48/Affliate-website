@@ -34,7 +34,7 @@ $stmt->bindParam(":link",$link);
 
 $stmt->execute();
 
-header('location: admin-dashboard.html');
+header('location: admin-dashboard.php');
 
 
 
