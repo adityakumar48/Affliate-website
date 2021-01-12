@@ -24,6 +24,12 @@
       <div class="col-md-4">
         <div class="card">
           <h1 class="py-3">Admin Login</h1>
+          <?php session_start();
+		if(isset($_SESSION['error'])){
+			echo $_SESSION['error'];
+			unset($_SESSION['error']);
+			}
+	?>
           <form action="process.php" method="post">
             <div class="username__Section py-2">
               <tr>
