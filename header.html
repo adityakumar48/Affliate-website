@@ -12,8 +12,44 @@
       crossorigin="anonymous"
     />
     <!-- bootstrap -->
+    <!--Custom CSS -->
+    <link rel="stylesheet" href="css/headerStyle.css">
+    <!--Custom CSS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- Font Awesome -->
+   
   </head>
+ <header id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">AMarket</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto ml-auto mb-2 mb-lg-0">
+          <li class="navbar__class  p-2">
+            <a class="navbar__link " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="navbar__class p-2">
+            <a class="navbar__link " href="store.html"><i class="fas fa-shopping-cart"></i> Store</a>
+          </li>
+   
+          <li class="navbar__class p-2">
+            <a class="navbar__link " href="about.html">About</a>
+          </li>
 
+          <li class="navbar__class p-2">
+            <a class="navbar__link " href="privacy.html">Privacy Policy</a>
+          </li>
+   
+       
+   
+      </div>
+    </div>
+  </nav>
+ </header>
   <body>
     <!-- bootstrap -->
     <script
@@ -32,5 +68,23 @@
       crossorigin="anonymous"
     ></script>
     <!-- bootstrap -->
+    <script>
+      window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    </script>
   </body>
 </html>

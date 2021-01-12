@@ -5,13 +5,16 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-/* font-family: 'Mulish', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
-#admin {
-  height: 80vh;
+.navbar {
+  background-color: white;
+  height: 70px;
 }
-textarea {
-  resize: none;
+.navbar__link {
+  color: black;
+}
+.navbar__link {
+  text-decoration: none !important;
+}
+.navbar__link:hover {
+  color: black;
 }
