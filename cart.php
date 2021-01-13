@@ -40,19 +40,15 @@ include('header.html')
     foreach($rs as $row){
 ?> 
 
-       <!-- Card Start -->
-         <div class="col-md-3 ">
-               <div class="card" style="width: 18rem;">
-                 <img class="card-img-top" src="uploads/<?php echo $row['image'];?>" alt="shinzo" width="100%" height="300px">
+       <!-- Card Start -->  
+                 <img class="card-img-top" src="uploads/<?php echo $row['image']/$id;?>" alt="shinzo" width="100%" height="300px">
                  <hr>
-                 <div class="card-body">
-                   <h3 class="card-title"><?php echo $row['title']; ?></h3>
-                   
+                   <h2 class="card-title"><?php echo $row['title']/$id; ?></h2>
+                   <p class="card-text"><?php echo $row['description']/$id; ?></p>
                    <hr>
-                  <h5 class="card-text pb-2">₹ <?php echo $row['price']; ?></h5>
-                  <a href=<?php echo $row['link']; ?>  class="btn btn-danger">Features</a>
-                   <a href=<?php echo $row['link']; ?>  class="btn btn-primary">Book Now</a>
-                   
+                  <p class="card-text">₹ <?php echo $row['price']/$id; ?></p>
+                  <p class="card-text">₹ <?php echo $row['price']/$id; ?></p>
+                   <a href=<?php echo $row['link']; ?>  class="btn btn-primary mx-5">Book Now</a>
                   </div>
                   </div>
                </div>
@@ -76,3 +72,4 @@ include('header.html')
     <!-- bootstrap -->
   </body>
 </html>
+

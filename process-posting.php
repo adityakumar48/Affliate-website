@@ -16,7 +16,7 @@ $imageSize=$_FILES['image']['size'];
 $upload_dir='uploads/';
 $imgExt=strtolower(pathinfo($Image,PATHINFO_EXTENSION));
 $vaild_extensions=array('jpeg','jpg','png','gif','pdf');
-$picProfile=rand(1000, 1000000).".".$imgExt;
+$picProfile=$Image=$_FILES['image']['name'].".".$imgExt;
 move_uploaded_file($tmp_dir, $upload_dir.$picProfile);
 
 
