@@ -89,7 +89,7 @@ From time to time, we may modify this Schedule in accordance with the Operating 
       
      foreach($rs as $row){
  ?> 
- <div class="scrolling-wrapper">
+ 
  <div class="col-md-3 p-3">
                 <div class="card" style="width: 18rem;">
                   <img class="card-img-top" src="uploads/<?php echo $row['image'];?>" alt="shinzo" width="100%" height="300px">
@@ -112,15 +112,27 @@ From time to time, we may modify this Schedule in accordance with the Operating 
  <div class="py-5 my-5">
 
  </div>
+ <div class="pt-4 pb-2 ">
+   <div class="About-text">
+      <h1 class="text-center">About Section</h1>
+   </div>
+ </div>
  <section class="pt-5 mt-5">
    <div class="container">
      <div class="row">
 
     
-      <div class="col-md-5">
+      <div class="col-md-6">
         <div class="about__section text-center">
         <h2 class="text-center">About</h2>
-        <p class="text-center col-md-12"> Affiliate marketing, while often referred to as a “channel,” is really a model or framework that makes it possible for brands to partner with individuals or companies (referred to as “affiliates,” “partners” and “publishers”), to track and measure their performance and do so in an efficient, scalable, and cost-effective way.</p>
+        <p class="text-center col-md-12"> Affiliate marketing, while often referred to as a “channel,” is really a model or framework that makes it possible for brands to partner with individuals or companies (referred to as “affiliates,” “partners” and “publishers”), to track and measure their performance and do so in an efficient, scalable, and cost-effective way.Affiliate marketing is form of internet marketing where companies (sometimes referred to as advertisers or merchants) pay people (affiliates) based on their performance promoting an offer via an affiliate link.
+
+In a nutshell, if you’re an affiliate (also referred to as a publisher), you use your skills as a marketer to refer your audience to a product. When someone in your audience decides to buy a product or take an action based on your recommendation, you get a commission or kickback.</p>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="about__img ">
+          <img src="img/undraw_Personal_goals_re_iow7.svg" class="rounded d-block mx-atuo" width="100%">
         </div>
       </div>
       </div>
@@ -172,3 +184,6 @@ From time to time, we may modify this Schedule in accordance with the Operating 
 
   </body>
 </html>
+<?php
+include('footer.html');
+?>

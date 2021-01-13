@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer__left li {
+  list-style-type: none !important;
+  padding: 15px;
+}
+.footer__left ul {
+  display: flex;
+}
+.footer__right li {
+  list-style-type: none !important;
+  padding: 15px;
+}
+
+.footer__right ul {
+  float: right;
+  display: flex;
+  padding-right: 20px;
+}

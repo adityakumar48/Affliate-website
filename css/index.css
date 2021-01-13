@@ -4,11 +4,7 @@
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
 }
-.scrolling-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
+
 .card {
   display: inline-block;
 }

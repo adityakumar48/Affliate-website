@@ -60,6 +60,9 @@ include('header.html')
                   </div>
                </div>
              <?php } ?>
+        </div>
+    </div>
+    </div>
         
     <!-- bootstrap -->
     <script
@@ -81,3 +84,7 @@ include('header.html')
    
   </body>
 </html>
+<?php
+
+include('footer.html');
+?>
