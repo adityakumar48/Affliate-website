@@ -44,7 +44,13 @@ include('header.html')
                  <hr>
                  <div class="card-body">
                    <h3 class="card-title"><?php echo $row['title']; ?></h3>
-                   
+                   <div class="rating text-warning ">
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
                    <hr>
                   <h5 class="card-text pb-2">₹ <?php echo $row['price']; ?></h5>
                   <a href=<?php echo $row['link']; ?>  class="btn btn-danger">Features</a>
@@ -54,6 +60,7 @@ include('header.html')
                   </div>
                </div>
              <?php } ?>
+        
     <!-- bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -71,5 +78,6 @@ include('header.html')
       crossorigin="anonymous"
     ></script>
     <!-- bootstrap -->
+   
   </body>
 </html>

@@ -89,9 +89,8 @@ From time to time, we may modify this Schedule in accordance with the Operating 
       
      foreach($rs as $row){
  ?> 
- 
-        <!-- Card Start -->
-          <div class="col-md-3 p-3">
+ <div class="scrolling-wrapper">
+ <div class="col-md-3 p-3">
                 <div class="card" style="width: 18rem;">
                   <img class="card-img-top" src="uploads/<?php echo $row['image'];?>" alt="shinzo" width="100%" height="300px">
                   <hr>
@@ -107,7 +106,27 @@ From time to time, we may modify this Schedule in accordance with the Operating 
                    </div>
                 </div>
               <?php } ?>
-    </section>
+
+</div>
+ </section>
+ <div class="py-5 my-5">
+
+ </div>
+ <section class="pt-5 mt-5">
+   <div class="container">
+     <div class="row">
+
+    
+      <div class="col-md-5">
+        <div class="about__section text-center">
+        <h2 class="text-center">About</h2>
+        <p class="text-center col-md-12"> Affiliate marketing, while often referred to as a “channel,” is really a model or framework that makes it possible for brands to partner with individuals or companies (referred to as “affiliates,” “partners” and “publishers”), to track and measure their performance and do so in an efficient, scalable, and cost-effective way.</p>
+        </div>
+      </div>
+      </div>
+   </div>
+ </section>
+
     <!-- bootstrap -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
