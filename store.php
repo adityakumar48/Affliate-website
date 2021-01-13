@@ -21,17 +21,14 @@ include('header.html')
     <div class="container">
          
         <div class="row">
-          <div class="col-md-12" >
+          <div class="col-md-10" >
           <h1 class="text-center">
            
          
         </div>
         <?php 
-  
-     
-
-  $sql = "select * from post ";
-  include("dbConnect.php");
+        $sql = "select * from post ";
+      include("dbConnect.php");
    
       $result= $pdo->query($sql);
       
@@ -41,7 +38,7 @@ include('header.html')
 ?> 
 
        <!-- Card Start -->
-         <div class="col-md-3 ">
+         <div class="col-md-3 p-3">
                <div class="card" style="width: 18rem;">
                  <img class="card-img-top" src="uploads/<?php echo $row['image'];?>" alt="shinzo" width="100%" height="300px">
                  <hr>

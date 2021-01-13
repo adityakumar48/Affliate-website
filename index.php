@@ -35,7 +35,7 @@
               </p>
             </div>
             <div class="button d-flex justify-content-center ">
-              <button class="btn btn-primary">Check Store</button>
+              <a href="store.php" class="btn btn-primary">Check Store</a>
             </div>
             
           </div>
