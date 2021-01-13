@@ -60,7 +60,11 @@
               <h1 class="text-center"> Affliate Companies</h1>
               <p class="text-center">This Associates Program Advertising Fee Schedule (“Schedule”) is part of the Operating Agreement that governs your participation in the Associates Program. This Schedule describes the advertising fee rates you may earn as a participant in the Program. It also describes the limitations that apply to earning advertising fees on certain Products.
 From time to time, we may modify this Schedule in accordance with the Operating Agreement. All capitalized terms used below that are not defined on this page have the meanings given to them in the Operating Agreement.</p>
+<div class="button d-flex justify-content-center ">
+              <a href="store.php" class="btn btn-success">Check Blog</a>
             </div>
+            </div>
+            
         </div>
       </div>
     </section>
